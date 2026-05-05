@@ -1,0 +1,110 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --verde-claro: #beee62;
+  --verde-medio: #70ae6e;
+  --verde-azulado: #3c6e71;
+  --laranja: #f4743b;
+  --roxo-escuro: #483c46;
+  --creme: #fef9f0;
+  --branca: #ffffff;
+  --texto-escuro: #2d2a2e;
+
+  --sombra: rgba(0, 0, 0, 0.08);
+  --sombra-suave: 0 8px 20px var(--sombra);
+  --overlay: rgba(60, 110, 113, 0.1);
+  --overlay-ativo: rgba(60, 110, 113, 0.15);
+
+  --fonte-principal: "Roboto", sans-serif;
+  --espacamento-pequeno: 8px;
+  --espacamento-medio: 16px;
+  --raio-borda: 8px;
+  --raio-borda-grande: 16px;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--creme);
+  color: var(--texto-escuro);
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ESTILOS DO MENU */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: var(--espacamento-pequeno) var(--espacamento-medio);
+  border-radius: var(--raio-borda);
+}
+
+/* HOVER */
+.navbar-nav .nav-link:hover {
+  color: var(--laranja);
+  background-color: var(--overlay);
+}
+
+/* ACTIVE */
+.navbar-nav .nav-link.active {
+  color: var(--laranja);
+  font-weight: bold;
+  background-color: var(--overlay-ativo);
+}
+
+/* CARDS */
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* BOTÕES */
+.btn:hover {
+  filter: brightness(0.9);
+  transition: 0.2s;
+}
+
+/* ÍCONES */
+i {
+  transition: transform 0.2s ease;
+}
+
+i:hover {
+  transform: scale(1.05);
+}
+
+/* CABEÇALHO */
+.navbar {
+  box-shadow: 0 2px 4px var(--sombra);
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: auto;
+}
+
+footer a:hover {
+  color: var(--verde-claro);
+  transition: 0.3s;
+}
+
+/* SEÇÕES */
+section {
+  width: 100%;
+}
+
+section h1,
+section h2,
+section h3 {
+  margin-top: 0;
+}
