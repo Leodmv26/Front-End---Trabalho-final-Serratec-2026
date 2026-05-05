@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serrapet | Adoção e Apadrinhamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container-header">
+    <div class="header-info">
+      
+      <img src="../img/SerraPet_1.webp" alt="Logo Serrapet" class="logo-principal">
+     
+      <p>Cuidado e Amor em Petrópolis</p>
+    </div>
+
+    <div class="header-gallery">
+      
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=300" alt="Cães correndo" class="foto-emocional">
+      <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?q=80&w=300" alt="Gato carente" class="foto-emocional">
+      <img src="https://blog.cobasi.com.br/wp-content/uploads/2020/10/Jabuti.png" alt="Jabuti caminhando" class="foto-emocional">
+      <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?q=80&w=300" alt="Olhar de adoção" class="foto-emocional">
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=300" alt="Gatinho pedindo ajuda" class="foto-emocional">
+    </div>
+  </div>
+</header>
+
+<main>
+  
+  <section id="adocao">
+    <h2>Como funciona a Adoção?</h2>
+    <p class="descricao">Adotar é um ato de responsabilidade. Para garantir o bem-estar, seguimos este processo:</p>
+
+    <div class="cards">
+      <div class="card"><h3>1. Escolha</h3><p>Encontre o amigo que combina com sua rotina.</p></div>
+      <div class="card"><h3>2. Formulário</h3><p>Preencha sua intenção com sinceridade.</p></div>
+      <div class="card"><h3>3. Avaliação</h3><p>Conversamos para conhecer o futuro lar.</p></div>
+      <div class="card"><h3>4. Adoção</h3><p>Assinatura do termo e muita alegria!</p></div>
+    </div>
+    <a href="#form-adocao-anchor" class="btn">Quero Adotar</a>
+  </section>
+
+  
+  <section id="apadrinhamento">
+    <h2>Como funciona o Apadrinhamento?</h2>
+    <p class="descricao">Transforme a vida de um animal mesmo sem poder levar para casa.</p>
+
+    <div class="cards">
+      <div class="card"><h3>Financeiro</h3><p>Contribua com custos médicos e abrigo.</p></div>
+      <div class="card"><h3>Material</h3><p>Ração, cobertores e remédios são bem-vindos.</p></div>
+      <div class="card"><h3>Afetivo</h3><p>Dê carinho e passeie com nossos pets.</p></div>
+    </div>
+    <a href="#form-apadrinha-anchor" class="btn">Quero Apadrinhar</a>
+  </section>
+
+  <hr class="divisor">
+
+  
+  <section id="form-adocao-anchor">
+   <div class="form-container">
+  <h3>Formulário de Interesse em Adoção</h3>
+  <form id="formAdocao">
+    <input type="text" id="nomeAdote" placeholder="Seu nome completo" required>
+    <input type="email" id="emailAdote" placeholder="Seu melhor e-mail" required>
+    <input type="tel" id="telAdote" placeholder="Seu telefone (ex: 24 99999-9999)" required>
+    <textarea id="msgAdote" rows="4" placeholder="Por que você deseja adotar este pet? Fale sobre sua casa e rotina."></textarea>
+    <button type="submit" class="btn">Enviar Pedido de Adoção</button>
+  </form>
+  <p id="feedbackAdote" class="feedback"></p>
+</div>
+  </section>
+
+  
+  <section id="form-apadrinha-anchor">
+    <div class="form-container">
+  <h3>Formulário de Apadrinhamento</h3>
+  <form id="formApadrinha">
+    <input type="text" id="nomeApadrinha" placeholder="Seu nome completo" required>
+    <input type="email" id="emailApadrinha" placeholder="Seu melhor e-mail" required>
+    <input type="tel" id="telApadrinha" placeholder="Seu telefone (ex: 24 99999-9999)" required>
+    <select id="tipoApoio" required>
+      <option value="">Como deseja ajudar?</option>
+      <option value="Financeiro">Apoio Financeiro Mensal</option>
+      <option value="Material">Doação de Materiais</option>
+      <option value="Afetivo">Apadrinhamento Afetivo (Visitas)</option>
+    </select>
+    <textarea id="msgApadrinha" rows="4" placeholder="Alguma observação ou dúvida?"></textarea>
+    <button type="submit" class="btn">Confirmar Apadrinhamento</button>
+  </form>
+  <p id="feedbackApadrinha" class="feedback"></p>
+</div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Serrapet - Unindo corações em Petrópolis</p>
+</footer>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
