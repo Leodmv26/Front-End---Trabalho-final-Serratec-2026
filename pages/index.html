@@ -68,6 +68,7 @@
     <input type="text" id="nomeAdote" placeholder="Seu nome completo" required>
     <input type="email" id="emailAdote" placeholder="Seu melhor e-mail" required>
     <input type="tel" id="telAdote" placeholder="Seu telefone (ex: 24 99999-9999)" required>
+    <input type="text" id="nomePetAdote" placeholder="Nome do pet que deseja adotar" required>
     <textarea id="msgAdote" rows="4" placeholder="Por que você deseja adotar este pet? Fale sobre sua casa e rotina."></textarea>
     <button type="submit" class="btn">Enviar Pedido de Adoção</button>
   </form>
@@ -77,12 +78,13 @@
 
   
   <section id="form-apadrinha-anchor">
-    <div class="form-container">
+   <div class="form-container">
   <h3>Formulário de Apadrinhamento</h3>
   <form id="formApadrinha">
     <input type="text" id="nomeApadrinha" placeholder="Seu nome completo" required>
     <input type="email" id="emailApadrinha" placeholder="Seu melhor e-mail" required>
     <input type="tel" id="telApadrinha" placeholder="Seu telefone (ex: 24 99999-9999)" required>
+    <input type="text" id="nomePetApadrinha" placeholder="Nome do pet que deseja apadrinhar" required>
     <select id="tipoApoio" required>
       <option value="">Como deseja ajudar?</option>
       <option value="Financeiro">Apoio Financeiro Mensal</option>
@@ -99,6 +101,17 @@
 
 <footer>
   <p>© 2026 Serrapet - Unindo corações em Petrópolis</p>
+  <div class="social-links">
+    <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://facebook.com/seuperfil" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://wa.me/5524999999999" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
 </footer>
 <div vw class="enabled">
   <div vw-access-button class="active"></div>
@@ -106,11 +119,11 @@
     <div class="vw-plugin-top-wrapper"></div>
   </div>
 </div>
+
 <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 <script>
   new window.VLibras.Widget('https://vlibras.gov.br/app');
 </script>
-
 <script src="script.js"></script>
 </body>
 </html>
