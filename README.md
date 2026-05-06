@@ -31,12 +31,12 @@ Navegação semântica para leitores de ecrã.
 
 # Equipe Desenvolvedora
 Este projeto foi construído de forma colaborativa:
-
+```
 Laís Ferrari do Amaral
 Leonam Nogueira
 Leonardo de Mattos Veiga
 Patrick Vinícius
 Roberta Rocha
-
+```
 Este projeto foi desenvolvido para fins educativos - 2026.# Front-End---Trabalho-final-Serratec-2026
 Repositório para o trabalho de Front End.
