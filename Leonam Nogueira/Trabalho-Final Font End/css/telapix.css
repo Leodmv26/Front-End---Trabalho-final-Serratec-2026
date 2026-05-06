@@ -1,4 +1,4 @@
-/* 1. Reset para garantir que não haja barras de rolagem bobas */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,10 +35,10 @@ body {
     display: block;
 }
 
-/* 3. Ajuste para Telas Pequenas (Notebooks ou Celulares) */
+/*  Ajuste para Telas */
 @media (max-width: 768px) {
     .Pix img {
-        max-height: calc(100vh - 120px); /* Ajusta o desconto se o menu diminuir no celular */
-        width: 90%; /* Dá um respiro nas laterais em telas muito estreitas */
+        max-height: calc(100vh - 120px); 
+        width: 90%; 
     }
 }

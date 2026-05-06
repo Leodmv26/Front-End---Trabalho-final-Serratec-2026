@@ -9,11 +9,11 @@
 
 body {
     background-color: #d0ec4f;
-    
+    background-image: url("../img/fundo.png");
     font-family: 'Roboto', sans-serif;
 }
 
-/* 2. Layout Estrutural */
+/* Layout Estrutural */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -21,7 +21,7 @@ body {
     padding: 20px 0;
 }
 
-/* 3. Seção Hero (Apoie nossa Causa) */
+/* (Apoie nossa Causa) */
 .apoie {
     background-color: #ffffff;
     text-align: center;
@@ -30,7 +30,7 @@ body {
     border-radius: 20px;
     border: 5px solid black;
     box-shadow: 10px 10px 0px black;
-  /
+  
 }
 
 .titulodoacao {
@@ -41,7 +41,7 @@ body {
     line-height: 1;
 }
 
-/* 4. Seção de Valores (Cards) */
+
 .doe-valor,
 .doacao-bazar {
     margin: 40px auto;
@@ -66,7 +66,7 @@ body {
     text-transform: uppercase;
 }
 
-/* 5. Alinhamento dos Botões */
+/* Alinhamento dos Botões */
 .botoes-group {
     display: flex;
     flex-wrap: wrap;
@@ -91,14 +91,17 @@ body {
     text-decoration: none;
     transition: all 0.2s ease;
     min-width: 1200px;
-}
+    }
 
-/* Interação */
+
+/* animacao botoes */
+
 .PIX:hover,
 .CARTAO:hover {
     background-color: #2b5153;
     transform: translate(-4px, -4px);
     box-shadow: 4px 4px 0px black;
+  
 }
 
 /* Ajuste específico para o VLibras não sobrepor conteúdo */
@@ -112,7 +115,7 @@ body {
 
 .itens-doacao {
     display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
     gap: 40px;
     padding: 40px 0;
