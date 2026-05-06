@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url("../img/fundo2.jpg");
+    font-family: 'Roboto', sans-serif;
+}
+/* Ajuste específico para o VLibras não sobrepor conteúdo */
+.enabled {
+    z-index: 9999;
+}
+
+#Apoie-nossa-causa {
+    position: relative;
+    background-color: #BEEE62;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 1%;
+    border: 2px solid #050505;
+    border-radius: 15px;
+    color: #483C46;
+    z-index: 100;
+    font-size: 35px;
+}
+
+/* Div que envolve o título "Por que apoiar..." */
+.oculto-apoie {
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Texto que vai "flutuar" abaixo */
+.texto-escondido {
+    position: absolute;
+    top: 100%;
+    /* Posiciona exatamente onde termina a div pai */
+    left: 0;
+    width: 100%;
+
+    background-color: #F4743B;
+    color: rgb(12, 12, 12);
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    font-size: 20px;
+    line-height: 1.5;
+
+    /* Efeito de esconder */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+
+    z-index: 999;
+    /* Garante que fique por cima de QUALQUER outra coisa na página */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse */
+.oculto-apoie:hover .texto-escondido {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    /* Desce suavemente para a posição real */
+}
+
+/*  CLASSE DOE UM VALOR */
+#doe-valor {
+    display: flex;
+    flex-direction: column;
+    /* Coloca o título em cima e o resto embaixo */
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* ESTILO DO TÍTULO */
+#doe-valor h1 {
+    font-size: 50px;
+    color: #483C46;
+    background-color: #BEEE62;
+    border-color: #020202;
+    border: 4px solid;
+    padding: 2%;
+    
+    text-decoration: underline;
+    margin-bottom: 40px;
+    /* Dá o espaço entre o título e o cachorro/botões */
+}
+
+/* CAIXA QUE SEGURA O CACHORRO E OS BOTÕES */
+.conteudo-doacao {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    width: 60%;
+
+}
+
+/* AGRUPA OS DOIS BOTÕES */
+.botoes-doacao {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+
+}
+
+
+.PIX,
+.CARTAO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BEEE62;
+    color: #483C46;
+    font-size: 90px;
+    font-weight: bold;
+    padding: 10px 25px;
+
+    border: 9px solid #080808;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+/* Efeito ao passar o mouse para dar vida à página */
+.PIX:hover,
+.CARTAO:hover {
+    background-color: #F4743B;
+    transform: scale(1.05);
+}
+
+.doacao-item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 100%;
+    margin-top: 4%;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+.texto-informativo {
+    font-size: 40px;
+  
+}
+
+.itens-doacao {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 0;
+    background-color: #BEEE62;
+    padding: 3%;
+     border-color: #020202;
+    border: 4px solid;
+}
+
+
+/* =========================================
+   RESPONSIVIDADE (MEDIA QUERIES)
+   ========================================= */
+
+/* Para Tablets e Telas Médias (até 1024px) */
+@media (max-width: 1024px) {
+    #Apoie-nossa-causa {
+        width: 70%; /* Aumenta a largura para não espremer o texto */
+    }
+
+    .conteudo-doacao {
+        width: 90%; /* Dá mais espaço para o cachorro e os botões */
+    }
+
+    /* Reduz um pouco os tamanhos gigantes para caber no tablet */
+    #doe-valor h1 {
+        font-size: 35px;
+        border-radius: 40px; /* Ajusta o formato oval */
+    }
+
+    .PIX, .CARTAO {
+        font-size: 40px; 
+        padding: 10px 20px;
+        border-width: 5px;
+    }
+
+    .texto-informativo {
+        font-size: 30px;
+    }
+}
+
+/* Para Celulares (até 768px) */
+@media (max-width: 768px) {
+    
+    #Apoie-nossa-causa {
+        width: 90%;
+        height: auto; 
+        padding: 30px 10px; 
+        font-size: 24px;
+    }
+
+    .texto-escondido {
+        font-size: 16px; 
+    }
+
+    #doe-valor h1 {
+        font-size: 22px;
+        border-radius: 20px; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    
+    .conteudo-doacao {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .conteudo-doacao img {
+        max-width: 80%; 
+        height: auto;
+    }
+
+    .botoes-doacao {
+        flex-direction: column; 
+        width: 100%;
+        gap: 15px;
+    }
+
+    .PIX, .CARTAO {
+        width: 100%; 
+        font-size: 25px; 
+        padding: 15px;
+        border-width: 4px;
+        border-radius: 30px;
+    }
+
+    .itens-doacao {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .texto-informativo {
+        font-size: 22px;
+        text-align: center;
+    }
+}
