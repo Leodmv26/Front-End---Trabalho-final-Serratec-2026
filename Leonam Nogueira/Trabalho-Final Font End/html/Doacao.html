@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serrapet</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/doacao.css">
+    <title>Serrapet - Apoie nossa causa</title>
     <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/apoie-nossa-causa.css">
 </head>
-<header class="cabecalho-principal">
+
+<body>
+    <header class="cabecalho-principal">
         <div class="logo">
-            
-            <img src="../img/logo.png" alt=" logo" width="200">
+            <img src="../img/logo.png" alt="logo Serrapet" width="200">
         </div>
         <nav class="menu-navegacao">
             <ul>
@@ -23,40 +23,48 @@
             </ul>
         </nav>
     </header>
-<body>
- <section class="container apoie">  <!-- texto apoie nossa causa -->
 
-    <h1 class="titulodoacao"><img src="../img/apoie-causa.png" alt="Cachorros em fila">Apoie Nossa Causa</h1>
+    <main>
+        <!-- Seção Principal de Apoio -->
+        <div id="Apoie-nossa-causa">
+            <img src="../img/apoie-causa.png" alt="cachorros para adoção">
+            <h1>Apoie nossa causa</h1>
+            
+            <div class="oculto-apoie">
+              <p style="color: #483C46;">  <strong>Por que apoiar o Serrapet?</strong>
+                <div class="texto-escondido">
+                    <p>Apoiar o Serrapet vai além de ajudar animais; fortalece uma rede de solidariedade. 
+                    Sua ajuda garante alimentação, cuidados veterinários e um ambiente seguro para pets que esperam por um lar.</p>
+                    <p></p> <strong>Transforme o destino de um animal e ganhe um amigo para a vida toda.</strong></p>
+                </div>
+            </div>
+        </div> 
 
-</section>
+       <!-- Seção de Doação de Valor -->
+<div id="doe-valor">
+    <h1>Ajude a mudar um destino. Doe agora!</h1>
 
- <!-- texto Doe um valor  -->
-
-<section class="container doe-valor"> 
- <div class="doe-um-valor">
-<img src="../img/doacao-valor.png" alt="Cachorro" width="300">
-            <h2>Doe um Valor</h2>
- </div>
- 
-    <a href="pagina-pix.html" class="PIX"> ❖ PIX </a>
-    
-    
-    <a href="pagina-cartao.html" class="CARTAO"> 💳 Cartão </a>
+   
+    <div class="conteudo-doacao">
+        <img src="../img/doacao-valor.png" alt="cachorro de doação">
+        
+        <div class="botoes-doacao">
+            <a href="pagina-pix.html" class="PIX"> ❖ PIX </a>
+            <a href="pagina-cartao.html" class="CARTAO"> 💳 Cartão </a>
+        </div>
+    </div>
 </div>
 
-</section>
-
-
- <!--  Doacao de itens  -->
+<!--  Doacao de itens  -->
 
 <section class="doacao-bazar"> 
- <div class="doe-um-valor">
+ <div class="doacao-item">
 <img src="../img/Bazar-doacao-item.png" alt="Gato e Cachorro">
 
 
 
 
-            <h2>Doações de produtos pet</h2>
+            
 <section class="container itens-doacao">
      <div class="texto-informativo">
         
@@ -95,7 +103,9 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
 
-(!--Roddape--)
+
+    </main>
+    <!--Roddape-->
 
   <footer class="py-4" style="background-color: var(--escuro, #483C46); color: white;">
         <div class="container text-center">
