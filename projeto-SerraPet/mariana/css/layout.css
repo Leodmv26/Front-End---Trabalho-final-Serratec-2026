@@ -1,4 +1,3 @@
-
 /* Estilo da barra de navegação principal */
 .navbar {
   box-shadow: 0 2px 4px var(--sombra); /* sombra suave embaixo do cabeçalho */
@@ -42,4 +41,16 @@ section h1,
 section h2,
 section h3 {
   margin-top: 0;
+}
+
+/* AJUSTES DE Z-INDEX */
+.navbar,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  position: relative;
+  z-index: 1;
 }

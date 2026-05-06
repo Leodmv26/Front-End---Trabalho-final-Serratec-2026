@@ -1,4 +1,3 @@
-// Interatividade
 document.addEventListener("DOMContentLoaded", () => {
   const surpriseBtn = document.getElementById("surpriseBtn");
   const surpriseMessage = document.getElementById("surpriseMessage");
