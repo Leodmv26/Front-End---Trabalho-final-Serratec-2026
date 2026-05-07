@@ -1,40 +1,55 @@
-/* Estilização do Cabeçalho  */
-.cabecalho-principal {
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-    border-bottom: 5px solid black; /* Mantendo o padrão de bordas do seu projeto */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    position: sticky; /* Faz o menu ficar parado no topo ao rolar */
-    top: 0;
-    z-index: 1000;
+
+
+
+.cabecalho-principal{
+    font-family: 'Roboto', sans-serif; /*!--FONTE--*/
+
+    background-color: rgb(38, 235, 114); /*Define a cor de fundo do cabeçalho como branco.*/
+
+    border-bottom: 5px solid black; /* Cria aquela linha grossa preta na parte de baixo do cabeçalho. Isso mantém o estilo visual "neobrutalista" (com bordas marcantes) */
+
+    display: flex;/*Ativa o modelo Flexbox. Isso permite que você alinhe o logotipo de um lado e o menu do outro de forma muito simples.*/
+
+    justify-content: space-between; /*Como o flex está ativo, este comando empurra o logotipo para a extrema esquerda e o menu para a extrema direita, deixando todo o espaço vazio no meio.*/
+
+    align-items: center; /*Alinha verticalmente o logotipo e os links do menu. Sem isso, um poderia ficar mais "para cima" que o outro; com isso, ambos ficam perfeitamente centralizados na altura.*/
+
+padding: 20px 5%; /* Cria um respiro interno: 20px de espaço em cima e embaixo, e 5% de espaço nas laterais. Usar porcentagem ajuda a manter o conteúdo alinhado com o resto do seu site em telas de tamanhos diferentes.*/
+
+position: sticky; /*Ele faz com que o cabeçalho se comporte como um adesivo. Quando você rola a página para baixo, ele "gruda" no topo.*/
+
+top: 0; /*Trabalha junto com o sticky. Diz que o cabeçalho deve grudar exatamente na posição zero (o topo absoluto) da tela.*/
+
+z-index: 1000; /*Define a "camada" de profundidade. Como o cabeçalho vai ficar parado enquanto você rola a página, o valor 1000 garante que ele passe por cima de todos os outros elementos do site, e não por baixo deles.*/
 }
 
-.logo a {
-    
-}
 
 .menu-navegacao ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+list-style: none; /* Remove as "bolinhas" (bullets) que aparecem por padrão em listas <ul>.*/
+
+display: flex;  /* Faz com que os itens da lista fiquem um ao lado do outro em vez de um embaixo do outro.*/
+
+gap: 20px;    /* Cria um espaçamento fixo de 20 pixels entre cada item do menu, sem precisar usar margens manuais.*/
 }
 
-.menu-navegacao a {
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
 
-/* Efeito Hover no Menu */
-.menu-navegacao a:hover, 
-.menu-navegacao a.ativo {
-    background-color: #BEEE62; 
-    border: 2px solid black;
+.menu-navegacao ul li a {
+text-decoration: none; /* Remove o sublinhado dos links do menu.*/
+
+color: black;        /* Cor do texto em preto.*/
+
+font-weight: 700;      /* Deixa os links em negrito para facilitar a leitura.*/
+
+font-size: 18px;      /* Tamanho da fonte dos links.*/
+
+padding: 8px 15px;    /* Cria um preenchimento interno (8px em cima/baixo e 15px nas laterais). Isso é importante para que, quando o fundo mudar de cor, ele pareça um botão e não apenas um texto solto.*/
+
+border-radius: 5px;   /* Arredonda levemente os cantos do "botão" do link.*/
+
+transition: 0.3s;     /* Faz com que qualquer mudança (como a cor de fundo no hover) aconteça de forma suave em 0,3 segundos, em vez de mudar instantaneamente.*/
+
+}
+.menu-navegacao ul li a:hover {
+    background-color: rgb(245, 99, 2);
+    color: white;
 }
